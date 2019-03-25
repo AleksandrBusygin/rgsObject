@@ -25,14 +25,14 @@ public class FinalPage extends BasePageObject {
     @FindBy(xpath = "//div[@style=\"visibility: visible; opacity: 1; display: block; transform: translateX(0px);\"]//child::small[@data-bind=\"text: ko.unwrap('undefined' === typeof info ? '' : info)\"]")
     WebElement relaxOption;
 
-    public void compareFinalresults(){
+    public void compareFinalResults(String p1, String p2, String p3, String p4, String p5){
         waitFieldisDisplayed(comfort);
         scrollToElement(elementToscroll);
-        compareText(trips.getText(),"Многократные поездки в течение года");
-        compareText(shengen.getText(),"Шенген");
-        compareText(firstName.getText(),"PUTIN VLADIMIR");
-        compareText(birthDate.getText(),"07.10.1952");
-        compareText(relaxOption.getText(),"(включая активный отдых)");
+        compareText(trips.getText(),p1);
+        compareText(shengen.getText(),p2);
+        compareText(firstName.getText(),p3);
+        compareText(birthDate.getText(),p4);
+        compareText(relaxOption.getText(),p5);
     }
 
 

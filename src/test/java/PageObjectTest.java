@@ -18,7 +18,7 @@ public class PageObjectTest extends ForTest {
         calculationPage.chooseRelaxOption(true);
         calculationPage.consent();
         calculationPage.calculation();
-        finalPage.compareFinalresults();
+        finalPage.compareFinalResults("Многократные поездки в течение года","Шенген","PUTIN VLADIMIR","07.10.1952","(включая активный отдых)");
     }
 
 }
