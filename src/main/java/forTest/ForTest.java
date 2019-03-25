@@ -21,8 +21,6 @@ public class ForTest {
     protected CalculationPage calculationPage;
     protected FinalPage finalPage;
     protected String countryName;
-//    public String name;
-//    public String date;
 
     @Before
     public void beforeEach() {
@@ -51,9 +49,6 @@ public class ForTest {
         calculationPage = new CalculationPage();
         finalPage = new FinalPage();
         countryName = "Испания";
-//        name = "PUTIN VLADIMIR";
-//        date = "07.10.1952";
-// не хочет сравнивать если задаю здесь имя и дату рождения, в финальном методе не видит этих переменных, хотя они public
     }
 
     @After

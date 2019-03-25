@@ -25,14 +25,14 @@ public class FinalPage extends BasePageObject {
     @FindBy(xpath = "//div[@style=\"visibility: visible; opacity: 1; display: block; transform: translateX(0px);\"]//child::small[@data-bind=\"text: ko.unwrap('undefined' === typeof info ? '' : info)\"]")
     WebElement relaxOption;
 
-    public void compareFinalResults(String p1, String p2, String p3, String p4, String p5){
+    public void compareFinalResults(String reasonOfInsurance, String partOfWorldToVisit, String fullName, String dateOfBirth, String activeSportOption){
         waitFieldisDisplayed(comfort);
         scrollToElement(elementToscroll);
-        compareText(trips.getText(),p1);
-        compareText(shengen.getText(),p2);
-        compareText(firstName.getText(),p3);
-        compareText(birthDate.getText(),p4);
-        compareText(relaxOption.getText(),p5);
+        compareText(trips.getText(),reasonOfInsurance);
+        compareText(shengen.getText(),partOfWorldToVisit);
+        compareText(firstName.getText(),fullName);
+        compareText(birthDate.getText(),dateOfBirth);
+        compareText(relaxOption.getText(),activeSportOption);
     }
 
 
